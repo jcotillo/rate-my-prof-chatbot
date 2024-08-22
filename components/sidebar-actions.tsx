@@ -17,7 +17,6 @@ import {
 } from '@/components/ui/alert-dialog'
 import { Button } from '@/components/ui/button'
 import { IconShare, IconSpinner, IconTrash } from '@/components/ui/icons'
-import { ChatShareDialog } from '@/components/chat-share-dialog'
 import {
   Tooltip,
   TooltipContent,
@@ -48,19 +47,6 @@ export function SidebarActions({
             <Button
               variant="ghost"
               className="size-7 p-0 hover:bg-background"
-              onClick={() => setShareDialogOpen(true)}
-            >
-              <IconShare />
-              <span className="sr-only">Share</span>
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>Share chat</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button
-              variant="ghost"
-              className="size-7 p-0 hover:bg-background"
               disabled={isRemovePending}
               onClick={() => setDeleteDialogOpen(true)}
             >
@@ -71,13 +57,6 @@ export function SidebarActions({
           <TooltipContent>Delete chat</TooltipContent>
         </Tooltip>
       </div>
-      <ChatShareDialog
-        chat={chat}
-        shareChat={shareChat}
-        open={shareDialogOpen}
-        onOpenChange={setShareDialogOpen}
-        onCopy={() => setShareDialogOpen(false)}
-      />
       <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
         <AlertDialogContent>
           <AlertDialogHeader>
