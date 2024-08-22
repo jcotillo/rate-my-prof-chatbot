@@ -9,28 +9,25 @@ export function EmptyScreen() {
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
         <h1 className="text-lg font-semibold">
-          Welcome to Next.js AI Chatbot!
+          Welcome to the AI-Powered Rate My Professor App!
         </h1>
         <p className="leading-normal text-muted-foreground">
-          This is an open source AI chatbot app template built with{' '}
-          <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>, the{' '}
-          <ExternalLink href="https://sdk.vercel.ai">
-            Vercel AI SDK
-          </ExternalLink>
-          , and{' '}
-          <ExternalLink href="https://vercel.com/storage/kv">
-            Vercel KV
-          </ExternalLink>
-          .
+          This app allows you to get insights about professors based on student reviews. It's built with{' '}
+          <ExternalLink href="https://nextjs.org">Next.js</ExternalLink> and uses advanced AI technology to provide accurate and helpful information.
         </p>
         <p className="leading-normal text-muted-foreground">
-          It uses{' '}
-          <ExternalLink href="https://vercel.com/blog/ai-sdk-3-generative-ui">
-            React Server Components
-          </ExternalLink>{' '}
-          to combine text with generative UI as output of the LLM. The UI state
-          is synced through the SDK so the model is aware of your interactions
-          as they happen.
+          You can ask questions about professors, their teaching styles, course difficulty, and more. The AI will search through a database of student reviews to give you the most relevant information.
+        </p>
+        <p className="leading-normal text-muted-foreground">
+          To get started, simply type your question in the chat box below. For example:
+        </p>
+        <ul className="list-disc list-inside text-muted-foreground">
+          <li>"Who is the best Math professor?"</li>
+          <li>"What do students say about Dr. Smith's Chemistry class?"</li>
+          <li>"Which English Literature professor has the highest rating?"</li>
+        </ul>
+        <p className="leading-normal text-muted-foreground mt-4">
+          The AI will analyze the reviews and provide you with helpful insights to make informed decisions about your courses and professors.
         </p>
       </div>
     </div>
