@@ -45,7 +45,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           GeistMono.variable
         )}
       >
-        <Toaster position="top-center" />
+        <div>Under maintenance</div>
+        {/* <Toaster position="top-center" />
         <Providers
           attribute="class"
           defaultTheme="system"
@@ -57,7 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <main className="flex flex-col flex-1 bg-muted/50">{children}</main>
           </div>
           <TailwindIndicator />
-        </Providers>
+        </Providers> */}
       </body>
     </html>
   )
